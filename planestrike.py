@@ -110,7 +110,7 @@ for agent in agents:
     # Create the runner
     runner = Runner(agent=agent, environment=env)
     # Start learning
-    runner.run(episodes=5000, max_timesteps=50, episode_finished=episode_finished)
+    runner.run(episodes=1000, max_timesteps=50, episode_finished=episode_finished)
 
     # Print statistics
     print("Learning finished. Total episodes: {ep}. Average reward of last 100 episodes: {ar}.".format(ep=runner.episode,
