@@ -68,7 +68,7 @@ def init_board():
 
 class PlaneStrike(Environment):
     def __init__(self):
-        pass
+        self.hidden_state = init_board()
 
     def __str__(self):
         return 'PlaneStrike'
@@ -78,7 +78,6 @@ class PlaneStrike(Environment):
 
     def reset(self):
         self.state = np.zeros(N)
-        self.hidden_state = init_board()
         self.count = 0
         return self.state
 
