@@ -71,7 +71,7 @@ class PlaneStrike(Environment):
         pass
 
     def __str__(self):
-        return 'MinimalTest'
+        return 'PlaneStrike'
 
     def close(self):
         pass
