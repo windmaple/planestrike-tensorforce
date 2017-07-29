@@ -4,9 +4,6 @@ from tensorforce.environments import Environment
 import numpy as np
 import random
 
-N = 36
-S = 8
-
 BOARD_HEIGHT = 6
 BOARD_WIDTH = 6
 BOARD_SIZE = BOARD_HEIGHT * BOARD_WIDTH
