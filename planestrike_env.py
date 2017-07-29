@@ -98,8 +98,8 @@ class PlaneStrike(Environment):
 
     @property
     def states(self):
-        return dict(shape=(N,), type='float')
+        return dict(shape=(BOARD_SIZE,), type='float')
 
     @property
     def actions(self):
-        return dict(continuous=False, num_actions=N)
+        return dict(continuous=False, num_actions=BOARD_SIZE)
