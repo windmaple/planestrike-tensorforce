@@ -93,7 +93,7 @@ class PlaneStrike(Environment):
             else:
                 self.state[action] = -1
                 reward = -1
-        terminal = (self.count == S)
+        terminal = (self.count == PLANE_SIZE)
         return self.state, reward, terminal
 
     @property
